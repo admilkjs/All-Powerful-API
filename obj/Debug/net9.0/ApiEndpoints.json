@@ -1,0 +1,56 @@
+[
+  {
+    "ContainingType": "QQBot_Jump.Plugin.Root",
+    "Method": "Get",
+    "RelativePath": "",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [],
+    "EndpointName": "RootPath"
+  },
+  {
+    "ContainingType": "QQBot_Jump.Plugin.Favicon",
+    "Method": "Get",
+    "RelativePath": "favicon.ico",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [],
+    "EndpointName": "Favicon"
+  },
+  {
+    "ContainingType": "QQBot_Jump.Plugin.Qsign",
+    "Method": "Get",
+    "RelativePath": "qsign",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [],
+    "EndpointName": "Qsing"
+  },
+  {
+    "ContainingType": "QQBot_Jump.Controllers.WeatherForecastController",
+    "Method": "Get",
+    "RelativePath": "WeatherForecast",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[QQBot_Jump.Models.WeatherForecast, QQBot_Jump, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetWeatherForecast"
+  }
+]

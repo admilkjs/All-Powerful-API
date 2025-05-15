@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "Ozc3UClVbTc=",
+  "success": true,
+  "projectFilePath": "D:\\code\\cp\\QQBot_Jump\\QQBot_Jump.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\19772\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.5\\microsoft.aspnetcore.openapi.9.0.5.nupkg.sha512",
+    "C:\\Users\\19772\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512"
+  ],
+  "logs": []
+}
