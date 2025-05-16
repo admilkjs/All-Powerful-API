@@ -21,7 +21,7 @@ public class RedisRecordsMiddleware
         {
             // var ip = context.Connection.RemoteIpAddress?.ToString();
             // Test CF Zero Trust 
-            var ip = context.Request.Headers["Cf-Connecting-Ip"];
+            var ip = context.Request.Headers["Cf-Connecting-Ip"].ToString();
 
             if (!string.IsNullOrWhiteSpace(ip))
             {
