@@ -1,5 +1,6 @@
 ﻿namespace QQBot_Jump.Models;
 
+// TODO: 实现用户系统
 public class User
 {
     public string? UserName { get; set; }

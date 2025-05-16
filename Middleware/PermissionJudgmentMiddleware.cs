@@ -13,16 +13,13 @@ public class PermissionJudgmentMiddleware
     
     public async Task InvokeAsync(HttpContext context)
     { 
-        PermissionJudgment(context.Connection.RemoteIpAddress.ToString(),context);
+        var ip = context.Connection.RemoteIpAddress?.ToString();
+        PermissionJudgment(ip, context);
         await _next(context);
     }
 
     public bool PermissionJudgment(string? ip,HttpContext context)
     {
-        if (ip == null)
-        {
-            context.Abort(); // ? IP都没有,给我趋势
-        }
         // TODO: 权限判断逻辑
         bool result = true;
         if (result)
