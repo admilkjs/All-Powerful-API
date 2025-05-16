@@ -8,7 +8,7 @@ public class TokenResponse
 {
     public int Code { get; set; }
     public DataPayload Data { get; set; } = new();
-    public string Msg { get; set; }
+    public string Msg { get; set; } = "";
 }
 public class DataPayload
 {
