@@ -20,12 +20,15 @@ public class RequestLoggingMiddleware
 
     public async Task InvokeAsync(HttpContext context)
     {
+        //var ip = context.Connection.RemoteIpAddress
+        // Test CF Zero Trust 
+        var ip = context.Request.Headers["Cf-Connecting-Ip"];
         // 记录请求信息
-        _logger.LogInformation("[{time}][方法] {method} [路由] {url} [IP] {ip}",
+        _logger.LogInformation("[{time}][Method] {method} [URL] {url} [IP] {ip}",
             DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"),
             context.Request.Method,
             context.Request.Path,
-            context.Connection.RemoteIpAddress
+            ip
             );
 
         // 调用管道中的下一个中间件

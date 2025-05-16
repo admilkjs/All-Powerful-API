@@ -19,8 +19,8 @@ public class DataPayload
 
 
 [ApiController]
-[Route("/qsign")]
-public class Qsign: ControllerBase
+[Route("[controller]")]
+public class QsignController: ControllerBase
 {
     [HttpGet(Name = "Qsing")]
     public IActionResult Get()
@@ -47,7 +47,7 @@ public static class CryptoHelper
 
         var options = new JsonSerializerOptions
         {
-            PropertyNamingPolicy = JsonNamingPolicy.CamelCase, // 小写字段
+            PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
             WriteIndented = true
         };
 
@@ -57,6 +57,6 @@ public static class CryptoHelper
     private static string GenerateRandomHex(int byteLength)
     {
         byte[] bytes = RandomNumberGenerator.GetBytes(byteLength);
-        return Convert.ToHexString(bytes).ToLower(); // 转为小写十六进制
+        return Convert.ToHexString(bytes).ToLower();
     }
 }

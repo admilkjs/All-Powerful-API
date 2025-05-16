@@ -54,5 +54,26 @@ public class Redis
         return await _db.KeyExistsAsync(key);
     }
     
-    // TODO: 以后要用再加吧,目前没有Hash存储需求
+    /// <summary>
+    /// 获取Hash表数据
+    /// </summary>
+    /// <param name="key"></param>
+    /// <param name="field"></param>
+    /// <returns></returns>
+   public async Task<string?> GetHashAsync(string key, string field)
+    {
+        return await _db.HashGetAsync(key, field);
+    }
+   
+    /// <summary>
+    /// 设置Hash表数据
+    /// </summary>
+    /// <param name="key"></param>
+    /// <param name="field"></param>
+    /// <param name="value"></param>
+    /// <returns></returns>
+   public async Task<bool> SetHashAsync(string key, string field, string value)
+    {
+        return await _db.HashSetAsync(key, field, value);
+    }
 }

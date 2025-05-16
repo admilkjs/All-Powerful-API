@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "D:\\code\\cp\\QQBot_Jump\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{0652D59E-44CD-4695-BB17-D58CBD3F0347}|QQBot_Jump.csproj|d:\\code\\cp\\qqbot_jump\\middleware\\requestloggingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0652D59E-44CD-4695-BB17-D58CBD3F0347}|QQBot_Jump.csproj|solutionrelative:middleware\\requestloggingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0652D59E-44CD-4695-BB17-D58CBD3F0347}|QQBot_Jump.csproj|d:\\code\\cp\\qqbot_jump\\middleware\\permissionjudgmentmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0652D59E-44CD-4695-BB17-D58CBD3F0347}|QQBot_Jump.csproj|solutionrelative:middleware\\permissionjudgmentmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0652D59E-44CD-4695-BB17-D58CBD3F0347}|QQBot_Jump.csproj|d:\\code\\cp\\qqbot_jump\\middleware\\redisrecordsmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0652D59E-44CD-4695-BB17-D58CBD3F0347}|QQBot_Jump.csproj|solutionrelative:middleware\\redisrecordsmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0652D59E-44CD-4695-BB17-D58CBD3F0347}|QQBot_Jump.csproj|d:\\code\\cp\\qqbot_jump\\plugin\\qsign.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0652D59E-44CD-4695-BB17-D58CBD3F0347}|QQBot_Jump.csproj|solutionrelative:plugin\\qsign.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -27,19 +39,58 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "RequestLoggingMiddleware.cs",
+              "DocumentMoniker": "D:\\code\\cp\\QQBot_Jump\\Middleware\\RequestLoggingMiddleware.cs",
+              "RelativeDocumentMoniker": "Middleware\\RequestLoggingMiddleware.cs",
+              "ToolTip": "D:\\code\\cp\\QQBot_Jump\\Middleware\\RequestLoggingMiddleware.cs",
+              "RelativeToolTip": "Middleware\\RequestLoggingMiddleware.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAIwCEAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T13:49:07.181Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PermissionJudgmentMiddleware.cs",
+              "DocumentMoniker": "D:\\code\\cp\\QQBot_Jump\\Middleware\\PermissionJudgmentMiddleware.cs",
+              "RelativeDocumentMoniker": "Middleware\\PermissionJudgmentMiddleware.cs",
+              "ToolTip": "D:\\code\\cp\\QQBot_Jump\\Middleware\\PermissionJudgmentMiddleware.cs",
+              "RelativeToolTip": "Middleware\\PermissionJudgmentMiddleware.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T13:49:08.005Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RedisRecordsMiddleware.cs",
+              "DocumentMoniker": "D:\\code\\cp\\QQBot_Jump\\Middleware\\RedisRecordsMiddleware.cs",
+              "RelativeDocumentMoniker": "Middleware\\RedisRecordsMiddleware.cs",
+              "ToolTip": "D:\\code\\cp\\QQBot_Jump\\Middleware\\RedisRecordsMiddleware.cs",
+              "RelativeToolTip": "Middleware\\RedisRecordsMiddleware.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAABAwBgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T13:32:49.655Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Qsign.cs",
               "DocumentMoniker": "D:\\code\\cp\\QQBot_Jump\\Plugin\\Qsign.cs",
               "RelativeDocumentMoniker": "Plugin\\Qsign.cs",
               "ToolTip": "D:\\code\\cp\\QQBot_Jump\\Plugin\\Qsign.cs",
               "RelativeToolTip": "Plugin\\Qsign.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-15T15:57:10.238Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\code\\cp\\QQBot_Jump\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -47,8 +98,7 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-15T12:48:06.566Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-15T12:48:06.566Z"
             }
           ]
         }

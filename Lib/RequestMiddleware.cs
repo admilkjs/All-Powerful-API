@@ -15,4 +15,10 @@ public static class RequestMiddleware
     {
         builder.UseMiddleware<PermissionJudgmentMiddleware>();
     }
+    
+    // Redis记录
+    public static void UseRedisRecords(this IApplicationBuilder builder)
+    {
+        builder.UseMiddleware<RedisRecordsMiddleware>();
+    }
 }

@@ -24,15 +24,4 @@ namespace QQBot_Jump.Plugin
             return Ok();
         }
     }
-
-    [ApiController]
-    [Route("/config")]
-    public class ReqConfig : ControllerBase
-    {
-        [HttpGet(Name = "config")]
-        public IActionResult Get()
-        {
-            return Ok();
-        }
-    }
 }
