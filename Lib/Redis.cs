@@ -5,13 +5,13 @@ namespace QQBot_Jump.Lib;
 public class Redis
 {
     private readonly IDatabase _db;
-    
+
     public Redis(IConnectionMultiplexer redis)
     {
         // 获取数据库,默认连接 db0
         _db = redis.GetDatabase();
     }
-    
+
     /// <summary>
     /// 设置字符串值
     /// </summary>
@@ -33,7 +33,7 @@ public class Redis
     {
         return await _db.StringGetAsync(key);
     }
-    
+
     /// <summary>
     /// 删除Key值
     /// </summary>
@@ -43,7 +43,7 @@ public class Redis
     {
         return await _db.KeyDeleteAsync(key);
     }
-    
+
     /// <summary>
     /// 判断Key是否存在
     /// </summary>
@@ -53,18 +53,18 @@ public class Redis
     {
         return await _db.KeyExistsAsync(key);
     }
-    
+
     /// <summary>
     /// 获取Hash表数据
     /// </summary>
     /// <param name="key"></param>
     /// <param name="field"></param>
     /// <returns></returns>
-   public async Task<string?> GetHashAsync(string key, string field)
+    public async Task<string?> GetHashAsync(string key, string field)
     {
         return await _db.HashGetAsync(key, field);
     }
-   
+
     /// <summary>
     /// 设置Hash表数据
     /// </summary>
@@ -72,7 +72,7 @@ public class Redis
     /// <param name="field"></param>
     /// <param name="value"></param>
     /// <returns></returns>
-   public async Task<bool> SetHashAsync(string key, string field, string value)
+    public async Task<bool> SetHashAsync(string key, string field, string value)
     {
         return await _db.HashSetAsync(key, field, value);
     }

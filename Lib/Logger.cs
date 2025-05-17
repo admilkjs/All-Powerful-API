@@ -16,7 +16,7 @@
         {
             if (_loggerFactory == null)
                 throw new InvalidOperationException("LoggerFactory 未初始化，请在 Program.cs 中调用 AppLogger.Configure()");
-            
+
             return _loggerFactory.CreateLogger<T>();
         }
 
@@ -24,7 +24,7 @@
         {
             if (_loggerFactory == null)
                 throw new InvalidOperationException("LoggerFactory 未初始化");
-            
+
             return _loggerFactory.CreateLogger(type);
         }
 

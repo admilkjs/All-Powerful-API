@@ -18,8 +18,7 @@ namespace QQBot_Jump
             {
                 try
                 {
-                    builder.Services.AddSingleton<IConnectionMultiplexer>(sp =>
-                        ConnectionMultiplexer.Connect(redisConnStr ?? "localhost:6379"));
+                    builder.Services.AddSingleton<IConnectionMultiplexer>(ConnectionMultiplexer.Connect(redisConnStr ?? "localhost:6379"));
                     builder.Services.AddSingleton<Redis>();
                     Console.WriteLine($"[{DateTime.Now:yyyy-MM-dd HH:mm:ss}] Redis 连接成功");
                 }
@@ -33,10 +32,10 @@ namespace QQBot_Jump
             builder.Services.AddOpenApi();
 
             var app = builder.Build();
-            
+
             // 初始化日志
             Logger.Configure(app.Services.GetRequiredService<ILoggerFactory>());
-            
+
             // 配置 HTTP 请求管道.
             if (app.Environment.IsDevelopment())
             {
@@ -49,7 +48,7 @@ namespace QQBot_Jump
             app.UseRequestLogging();
             // 权限判断中间件
             app.UsePermissionJudgment();
-            // Redis统计中间件
+            // Redis统计/缓存中间件
             app.UseRedisRecords();
 
             app.MapControllers();

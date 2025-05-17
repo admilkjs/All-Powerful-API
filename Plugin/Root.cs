@@ -4,7 +4,7 @@ namespace QQBot_Jump.Plugin
 {
     [ApiController]
     [Route("/")]
-    public class Root: ControllerBase
+    public class Root : ControllerBase
     {
         [HttpGet(Name = "RootPath")]
         public IActionResult Get()
@@ -18,7 +18,7 @@ namespace QQBot_Jump.Plugin
     [Route("/favicon.ico")]
     public class Favicon : ControllerBase
     {
-        [HttpGet(Name="Favicon")]
+        [HttpGet(Name = "Favicon")]
         public IActionResult Get()
         {
             return Ok();

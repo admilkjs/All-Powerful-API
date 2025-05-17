@@ -20,14 +20,13 @@ public class DataPayload
 
 [ApiController]
 [Route("[controller]")]
-public class QsignController: ControllerBase
+public class QsignController : ControllerBase
 {
     [HttpGet(Name = "Qsing")]
     public IActionResult Get()
     {
         return Ok(CryptoHelper.GenerateHexTokenResponse());
     }
-    
 }
 public static class CryptoHelper
 {
@@ -40,7 +39,7 @@ public static class CryptoHelper
             {
                 Token = GenerateRandomHex(12),
                 Extra = GenerateRandomHex(108),
-                Sign  = GenerateRandomHex(72)
+                Sign = GenerateRandomHex(72)
             },
             Msg = "success"
         };

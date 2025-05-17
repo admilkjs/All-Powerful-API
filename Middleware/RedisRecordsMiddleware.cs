@@ -19,10 +19,7 @@ public class RedisRecordsMiddleware
     {
         try
         {
-            // var ip = context.Connection.RemoteIpAddress?.ToString();
-            // Test CF Zero Trust 
-            var ip = context.Request.Headers["Cf-Connecting-Ip"].ToString();
-
+            var ip = context.GetClientIp();
             if (!string.IsNullOrWhiteSpace(ip))
             {
                 string redisKey = "api:Statistics:ip";
