@@ -1,6 +1,6 @@
 ﻿namespace QQBot_Jump.Models;
 
-public class UserModels
+public class UserDto
 {
     public string? UserName { get; set; }
     public string? Token { get; set; }
