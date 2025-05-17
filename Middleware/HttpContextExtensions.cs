@@ -10,9 +10,10 @@ public static class HttpContextExtensions
     /// </summary>
     /// <param name="context"></param>
     /// <returns></returns>
-    public static string? GetClientIp(this HttpContext context)
+    public static string GetClientIp(this HttpContext context)
     {
         return context.Request.Headers["Cf-Connecting-Ip"].FirstOrDefault()
-               ?? context.Connection.RemoteIpAddress?.ToString();
+               ?? context.Connection.RemoteIpAddress?.ToString()
+               ?? "未知IP";
     }
 }

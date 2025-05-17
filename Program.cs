@@ -46,10 +46,15 @@ namespace QQBot_Jump
 
             // 请求日志中间件
             app.UseRequestLogging();
+            
             // 权限判断中间件
             app.UsePermissionJudgment();
+            
             // Redis统计/缓存中间件
-            app.UseRedisRecords();
+            if (redisEnabled)
+            {
+                app.UseRedisRecords();
+            }
 
             app.MapControllers();
             app.Run();
